@@ -1,0 +1,161 @@
+
+body{
+    background-image: linear-gradient(black, blue);
+}
+a{
+    color: white;
+}
+#frame1{
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#introduce{
+    /* border: 3px solid silver; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-bottom: 0px;
+    color: turquoise;
+    text-align: center;
+    font-size: 75px;
+    font-family:  cursive;
+}
+h2{
+    margin-top: 0px;
+    color: turquoise;
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive;
+}
+.btn{
+    height: 50px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+.btn-txt{
+    font-size: 30px;
+    margin-top: 2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#about{
+
+    background-color: yellow;
+    align-items: center;
+    /* position: absolute; */
+    left: 45%;
+}
+.show-hide{
+    /* border: 3px solid white; */
+
+    color: white;
+    font-size: 20px;
+    display: none;
+    width: 85%;
+}
+
+h3{
+    color: white;
+    /* text-align: center; */
+    text-decoration: underline;
+    /* position: absolute; */
+    left: 40%;
+    margin-top: 2.5%;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+#frame2{
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 75%; */
+}
+h4{
+    color: silver;
+    font-size: 25px;
+    margin-top: 7%;
+}
+
+#title1{
+    /* position: absolute; */
+    left: 10%;
+}
+
+#title2{
+    /* position: absolute; */
+    left: 40%
+}
+
+#title3{
+    /* position: absolute; */
+    left: 70%
+}
+.img{
+    height: 55%;
+    width: 95%;
+}
+
+#d1{
+    /* position: absolute; */
+    bottom: 5%;
+    left: 10%;
+    background-color: turquoise;
+
+}
+
+#d2{
+    /* position: absolute; */
+    bottom: 5%;
+    left: 40%;
+    background-color: turquoise;
+
+}
+
+#d3{
+    /* position: absolute; */
+    bottom: 5%;
+    left: 70%;
+    background-color: turquoise;
+}
+
+.d-btn-txt{
+    font-size: 25px;
+    margin-top: 2.5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+ .project{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+} 
+
+ @media screen and (max-width: 1024px){
+    #frame2{flex-direction: column;
+            align-items: center;}
+    .project{width: 67%;}
+    h1{font-size: 60px;}
+    .btn{height: 40px;
+        width: 200px;}
+    .btn-txt{font-size: 20px;}
+    .d-btn-txt{font-size: 20px;}
+
+ }
+ @media screen and (min-width: 1025px){
+    #frame2{height: 67%;}/* This percentage value messes things up when screen height is short and screen width is at desktop-view, 
+        but I included it because without it the About This Project buttons alter the height of the images.*/
+    .img{height: 50%;}
+ }

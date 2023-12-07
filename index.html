@@ -1,0 +1,107 @@
+<!DOCTYPE
+
+lang="en">
+
+<head>
+<meta
+    charset="UTF-8">
+<!-- displays site properly based on user's device -->
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+<title> JavaScript</title>
+<link
+    rel="stylesheet"
+    href="CSS/style.css">
+
+</head>
+
+<body>
+    <div id = "introduce">
+        <h1>I am Lyle V. Nelson</h1>
+        <h2>and I can build you a website</h2>
+    </div>
+    <div id = "frame1">
+        <button
+            class="btn"
+            id="about"
+            onclick="displayMessage('about-me-txt')">
+            <p class = "btn-txt"> About me</p>
+        </button>
+
+        <div class = "show-hide" id = "about-me-txt">
+            <p> 
+                I am currently studying at the University of Idaho as an 
+                Economics major and Computer Science minor. I have some 
+                interest in building websites. I am seeking to work in a 
+                business or marketing role that favors basic website-building
+                know-how, or possibly in a web-development role. Contact me at
+                nelsonlylev@gmail.com.
+            </p>
+        </div>
+        
+        <h3> Some of My Projects </h3>
+    </div>
+    
+    <div id = "frame2">
+        <div class = "project" id = "project1"> 
+            <h4 id = "title1"> Jones Diamond Search </h4>
+            <img src = "jones.png" class = img id = "img1"> 
+            <button         
+                class="btn"
+                id="d1"
+                onclick="displayMessage('abt-proj-1')">
+                <p class = "d-btn-txt"> About This Project</p>
+            </button>
+            <div class = "show-hide" id = "abt-proj-1">
+                <p> 
+                    This is a simple diamond collecting game, built with C++. You play as an Indiana Jones character and 
+                    there are hidden diamonds at random locations on the screen. The goal is to collect
+                    as many diamonds as you can. You can set a timer for it if you want.
+                    <a href="https://github.com/Electrical-Fire/CS151/tree/lyles_branch">See GitHub Here</a>
+                </p>
+            </div>
+        </div>
+       
+        <div class = "project" id = "project2">
+                <h4 id = "title2"> LC-3 Fish Project </h4>
+                <img src = "LC3FishImage.png" alt = "Image 2" class = img id = img2> 
+                <button
+                    class="btn"
+                    id="d2"
+                    onclick="displayMessage('abt-proj-2')">
+                    <p class = "d-btn-txt"> About This Project</p>
+                </button>  
+                <div class = "show-hide" id = "abt-proj-2">
+                    <p> 
+                        This is a project built in LC-3 that has an animation of a fish moving across the screen 
+                        and blowing bubbles.
+                        <a href="https://github.com/LyleNelson862/LC3Fish/tree/main">See GitHub Here</a>
+                    </p>
+                </div>   
+        </div>
+    
+        <div class = "project" id = "project3">
+            <h4 id = "title3"> Moon Miner </h4>
+            <img src = MoonMinerPic.png alt = "Image 3" class = img id = img3> 
+            <button
+                class="btn"
+                id="d3"
+                onclick="displayMessage('abt-proj-3')">
+                <p class = "d-btn-txt"> About This Project</p>
+            </button>  
+            <div class = "show-hide" id = "abt-proj-3">
+                <p> 
+                    In this game, you mine the moon for cheese simply by clicking on the moon image with your mouse.
+                    The store on the left allows you to buy items that dig at a faster rate in exchange for a certain
+                    amount of cheese. This game was built with HTML JS and CSS.
+                    <a href="https://github.com/LyleNelson862/moonminer">See GitHub Here</a>
+                </p>
+            </div>   
+        </div>
+    </div>
+
+    <script
+        src="js/portfolio.js">
+    </script>
+</body> 
